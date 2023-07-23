@@ -1,0 +1,43 @@
+{
+  "name": "e-comm",
+  "version": "1.0.0",
+  "description": "e-comm website using nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production MONGO_USER=nakul MONGO_PASSWORD=SKq00PfFa3QUaXLU MONGO_DEFAULT_DATABASE=shop STRIPE_KEY=sk_test_51NW3muSFkueiGbbZFO6Rqmxj0gBXSwsEEFOr3SE2aKqesAgeoXhcINxiCHOrSiIzLEkWPUC0Wabt3VGLPvYFyLVi00oWKxfxpp node app.js",
+    "start-server": "node app.js",
+    "start:dev": "nodemon app.js"
+  },
+  "author": "Nakul Aeran",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^2.0.3",
+    "csurf": "^1.9.0",
+    "ejs": "^3.1.9",
+    "express": "^4.16.3",
+    "express-handlebars": "^7.1.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^7.0.1",
+    "helmet": "^3.14.0",
+    "mongodb": "^3.1.6",
+    "mongoose": "^5.2.17",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.0",
+    "mysql2": "^1.6.1",
+    "nodemailer": "^6.9.4",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "pdfkit": "^0.8.3",
+    "pug": "^3.0.2",
+    "sequelize": "^6.32.1",
+    "stripe": "^6.12.1",
+    "uuid": "^9.0.0"
+  }
+}
